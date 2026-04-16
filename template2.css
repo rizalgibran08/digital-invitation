@@ -1,0 +1,458 @@
+:root {
+  --shadow: 0 2px 2px rgb(0 0 0 /0.5);
+  --golden: #d59a57;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg_template2.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: contrast(70%) brightness(90%);
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+.hero h1,
+.hero h3,
+.hero p {
+  text-shadow: var(--shadow);
+}
+.hero h1 {
+  font-family: 'Niconne', cursive;
+  font-size: 6rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+.hero h1 span {
+  color: #d59a57;
+  text-shadow: var(--shadow);
+}
+.hero h3 {
+  font-size: 1.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.4rem;
+}
+.hero a {
+  color: #000;
+  background-color: var(--golden);
+  box-shadow: var(--shadow);
+}
+.hero a:hover {
+  border: 1px solid #d59a57;
+  color: var(--golden);
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'Niconne', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
+}
+.home h2,
+.info h2,
+.story h2,
+.gallery h2 {
+  color: var(--golden);
+  font-family: 'Niconne', cursive;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.home p {
+  font-size: 1rem;
+  color: #666;
+}
+.home .couple {
+  margin-top: 70px;
+}
+.home .couple h3 {
+  font-family: 'Niconne', cursive;
+  font-size: 2.5rem;
+  color: var(--golden);
+  font-weight: 600;
+}
+.home .couple img {
+  width: 100%;
+}
+.home .heart {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+.home .heart i {
+  margin: auto;
+  color: red;
+}
+
+.info {
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+}
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #444;
+}
+.info .title {
+  padding-top: 2rem;
+  border-top: 3px solid #d59a57;
+}
+.info h2 {
+  margin-bottom: 3rem;
+}
+.info .card {
+  border: 2px solid #d59a57;
+}
+.info .card-header {
+  background-color: var(--golden);
+  border-bottom: 1px solid #d59a57;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+.info .card-body {
+  color: #444;
+  font-size: 1rem;
+}
+.info .card-body p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.info .card-body .alamat {
+  font-weight: 200;
+}
+
+.info .card-body .btn {
+  border: 1px solid #d59a57;
+  color: var(--golden);
+  font-size: 1rem;
+}
+.info .card-footer {
+  background-color: var(--golden);
+  font-size: 0.85rem;
+  border-top: 1px solid #d59a57;
+  font-weight: 300;
+  color: #fff;
+}
+
+.our_love_area {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.our_love_area .section_title h3 {
+  color: var(--golden);
+  font-family: 'Niconne', cursive;
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+.love_wrapper {
+  position: relative;
+  margin-top: 30px;
+}
+.love_wrapper::before {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  content: '';
+  background-color: var(--golden);
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.single_love .love_content {
+  width: 45%;
+}
+.single_love .love_content .love_title {
+  font-family: 'Niconne', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d59a57;
+}
+.single_love .love_content p {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666;
+}
+.single_love .love_date {
+  width: 10%;
+  text-align: center;
+}
+.single_love .love_date p {
+  width: 40px;
+  position: relative;
+  color: #d59a57;
+  border: 1px solid #d59a57;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 2px;
+  position: relative;
+  line-height: 35px;
+  padding-bottom: 32px;
+  padding-top: 62px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.single_love .love_date p i {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #d59a57;
+  border-radius: 50%;
+  color: #d59a57;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+.single_love .love_image {
+  width: 45%;
+  padding: 2rem;
+}
+.single_love .love_image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+.gallery span {
+  color: #444;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.gallery p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* gallery slide */
+.container .image-slides {
+  position: relative;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 12px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.image-slides .thumbnail-bawah:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.back-to-top {
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: var(--golden);
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: none;
+}
+.back-to-top:hover {
+  color: var(--golden);
+  background-color: #fff;
+  border: 1px solid #d59a57;
+}
+
+/* ===== Media Query ===== */
+
+/* extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(50px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .home .heart {
+    display: none;
+  }
+}
+
+/* > tablet or ipad */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .home .heart {
+    display: none;
+  }
+  .single_love .love_image img {
+    height: 415px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* --- tablet --- */
+@media (max-width: 767px) {
+  html {
+    font-size: 65%;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .love_wrapper {
+    margin-top: 0;
+  }
+  .love_wrapper::before {
+    display: none;
+  }
+  .love_wrapper::before {
+    display: none;
+  }
+  .single_love .love_date {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .single_love .love_content {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .single_love .love_date p {
+    width: auto;
+    height: 40px;
+    padding-left: 62px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .single_love .love_image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+/* phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}
