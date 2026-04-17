@@ -1,6 +1,6 @@
 // ===== countdown
 simplyCountdown('.simply-countdown', {
-  year: 2023, // required
+  year: 2026, // required
   month: 11, // required
   day: 28, // required
   hours: 8, // Default is 0 [0-23] integer
@@ -45,7 +45,7 @@ $(function () {
       {
         scrollTop: 0,
       },
-      1500
+      1500,
     );
   });
 });
